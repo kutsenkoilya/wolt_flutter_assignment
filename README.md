@@ -1,4 +1,6 @@
-# Wolt Mobile App Assignment
+# Wolt Seniro Flutter Developer Assignment
+
+## Star this repo if it helped you!
 
 ## Concept
 A user is walking around Helsinki city center looking for a place to eat. Your task is to create an application that helps them find nearby venues dynamically.
@@ -15,6 +17,20 @@ A user is walking around Helsinki city center looking for a place to eat. Your t
    ```bash
    flutter test --coverage
 The coverage file will be saved in: ./coverage/Icov.info
+
+## Notes and room for improvement 
+### "Based on tech interview"
+This solution works and meets all feature requirement, but following notes should be taken into account:
+   - Project is based on Riverpod architecture (you should be able to talk about its pros and cons)
+   - Some usages of Riverpod concepts (providers, services, datasources) are used incorrectly, so has to be revised
+   - Or new Flutter Architecture Guideline can be checked and modules swapped
+   - Some services use Flutter packages and libraries wo any wrapping (di - interface-implementation), that breaks di approach
+   - Abstarct classes should be replaced with interfaces, this is current Flutter standard
+   - Service dependencies should be passed in class constructors
+   - Location service has stream subscription implementation (async*), type of stream should be rewised (broadcase vs single sub)
+   - And generally there should be a revision of which object must exist as singleton and which can have multiple instances
+   - venue_screen - StreamBuilder x FutureBuilder - FutureBuilder must always exist in single exemplar to prevent backend api ddos
+   - json to objects serialization can be rewised and found best place to do it
 
 ---
 
