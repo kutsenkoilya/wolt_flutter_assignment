@@ -1,4 +1,4 @@
-# Wolt Seniro Flutter Developer Assignment
+# Wolt Senior Flutter Developer Assignment
 
 ## Star this repo if it helped you!
 
