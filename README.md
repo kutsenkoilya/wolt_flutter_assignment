@@ -1,4 +1,4 @@
-# Wolt Senior Flutter Developer Assignment
+# Venue List Application
 
 ## Concept
 A user is walking around Helsinki city center looking for a place to eat. Your task is to create an application that helps them find nearby venues dynamically.
